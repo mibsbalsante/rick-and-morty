@@ -1,0 +1,28 @@
+/* -- Color variables -- */
+:root {
+  --color-white: #fcfcfc;
+  --color-grey: #eaeef2;
+  --color-grey-2: #262626;
+  --color-black: #1d1d1d;
+
+  /* scheme vars */
+  --color-text: var(--color-black);
+  --color-background: var(--color-grey);
+  --color-background-2: var(--color-white);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: var(--color-white);
+    --color-background: var(--color-grey-2);
+    --color-background-2: var(--color-black);
+  }
+}
+/* -- -- */
+
+/* -- Misc Variables */
+:root {
+  --size-header: 70px;
+
+  --shadow: 0 0 10px -4px var(--color-grey-2);
+}
