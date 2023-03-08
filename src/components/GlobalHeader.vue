@@ -20,6 +20,7 @@ import { fasFlask } from '@quasar/extras/fontawesome-v6'
   background-color: $quasar-primary;
   color: var(--color-white);
   box-shadow: var(--shadow);
+  z-index: 1;
 
   &__container {
     height: var(--size-header);

@@ -1,3 +1,4 @@
+/* global use */
 $quasar-primary: #1976d2;
 $quasar-secondary: #26a69a;
 $quasar-accent: #9c27b0;
@@ -8,3 +9,15 @@ $quasar-positive: #21ba45;
 $quasar-negative: #c10015;
 $quasar-info: #31ccec;
 $quasar-warning: #f2c037;
+
+/* quasar dependency */
+$primary: $quasar-primary;
+$secondary: $quasar-secondary;
+$accent: $quasar-accent;
+
+$dark: $quasar-dark;
+
+$positive: $quasar-positive;
+$negative: $quasar-negative;
+$info: $quasar-info;
+$warning: $quasar-warning;
