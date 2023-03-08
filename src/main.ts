@@ -1,5 +1,6 @@
 import { createApp, h } from 'vue'
 import { Quasar } from 'quasar'
+import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
@@ -17,10 +18,8 @@ const app = createApp({
   render: () => h(App)
 })
 
-app.use(Quasar, {
-  plugins: {}
-})
-
+app.use(Quasar, { plugins: {} })
 app.use(router)
+app.use(createPinia())
 
 app.mount('#app')

@@ -29,6 +29,7 @@ export default defineConfig({
       '@ast': fileURLToPath(new URL('./src/assets', import.meta.url)),
       '@cmp': fileURLToPath(new URL('./src/components', import.meta.url)),
       '@gql': fileURLToPath(new URL('./src/queries', import.meta.url)),
+      '@str': fileURLToPath(new URL('./src/stores', import.meta.url)),
       '@utl': fileURLToPath(new URL('./src/utils', import.meta.url))
     }
   },

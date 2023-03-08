@@ -8,6 +8,7 @@
       "@ast/*": ["./src/assets/*"],
       "@cmp/*": ["./src/components/*"],
       "@gql/*": ["./src/queries/*"],
+      "@str/*": ["./src/stores/*"],
       "@utl/*": ["./src/utils/*"]
     }
   },
