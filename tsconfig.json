@@ -5,7 +5,9 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
+      "@ast/*": ["./src/assets/*"],
       "@cmp/*": ["./src/components/*"],
+      "@gql/*": ["./src/queries/*"],
       "@utl/*": ["./src/utils/*"]
     }
   },
