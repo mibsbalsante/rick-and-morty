@@ -1,5 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import HomeList from '@cmp/HomeList.vue'
+</script>
 
 <template>
-  <main>homepage</main>
+  <main>
+    <HomeList />
+  </main>
 </template>

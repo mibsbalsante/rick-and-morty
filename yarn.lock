@@ -1142,7 +1142,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/devtools-api@npm:^6.4.5, @vue/devtools-api@npm:^6.5.0":
+"@vue/devtools-api@npm:^6.4.5":
   version: 6.5.0
   resolution: "@vue/devtools-api@npm:6.5.0"
   checksum: ec819ef3a426e91d09e9cfefd2827e9ed8ec9d62bb3b3e0674f3da8c7e92a4b879c3b777dc7329172ca6fe2670b62dd5580d23160339208f0f5ae038f2e504ad
@@ -4175,25 +4175,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pinia@npm:^2.0.32":
-  version: 2.0.32
-  resolution: "pinia@npm:2.0.32"
-  dependencies:
-    "@vue/devtools-api": ^6.5.0
-    vue-demi: "*"
-  peerDependencies:
-    "@vue/composition-api": ^1.4.0
-    typescript: ">=4.4.4"
-    vue: ^2.6.14 || ^3.2.0
-  peerDependenciesMeta:
-    "@vue/composition-api":
-      optional: true
-    typescript:
-      optional: true
-  checksum: cd02a7cb852b055a37bf91570b2831ac493b1e79ffd0096901177e5764f4b1fe392939c6a5c08d46962dc42db8f4f2750b8af250639bb5fa2e5b4270b6507670
-  languageName: node
-  linkType: hard
-
 "postcss-selector-parser@npm:^6.0.9":
   version: 6.0.11
   resolution: "postcss-selector-parser@npm:6.0.11"
@@ -4453,8 +4434,8 @@ __metadata:
     eslint: ^8.34.0
     eslint-plugin-vue: ^9.9.0
     graphql: ^16.6.0
+    graphql-tag: ^2.12.6
     npm-run-all: ^4.1.5
-    pinia: ^2.0.32
     prettier: ^2.8.4
     sass: ^1.58.3
     typescript: ~4.8.4
@@ -5204,7 +5185,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-demi@npm:*, vue-demi@npm:^0.13.1":
+"vue-demi@npm:^0.13.1":
   version: 0.13.11
   resolution: "vue-demi@npm:0.13.11"
   peerDependencies:
