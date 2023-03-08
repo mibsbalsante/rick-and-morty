@@ -14,14 +14,16 @@ const charactersStore = defineStore('characters', () => {
     name: filterName.value
   }))
 
-  const data = useQuery(CHARACTERS_QUERY, queryConfig)
+  const data = computed(() => useQuery(CHARACTERS_QUERY, queryConfig))
 
-  const characters = computed(() => data?.result?.value?.characters?.results)
+  const characters = computed(
+    () => data.value?.result?.value?.characters?.results
+  )
   const charactersCount = computed(
-    () => data?.result?.value?.characters?.info?.count || 0
+    () => data.value?.result?.value?.characters?.info?.count || 0
   )
 
-  const hasLastPage = computed(() => pageNumber.value <= 1)
+  const hasLastPage = computed(() => pageNumber.value > 1)
 
   const hasNextPage = computed(
     () => Math.ceil(charactersCount.value / PAGE_RESULTS) > pageNumber.value

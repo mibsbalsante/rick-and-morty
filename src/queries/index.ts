@@ -16,7 +16,7 @@ export const CHARACTERS_QUERY = gql`
 `
 
 export const CHARACTER_QUERY = gql`
-  query Character($id: Int) {
+  query Character($id: ID!) {
     character(id: $id) {
       name
       species
