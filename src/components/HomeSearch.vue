@@ -12,6 +12,7 @@ const { filterName } = useCharactersStore()
       v-model="filterName"
       debounce="500"
       label="Search by Name"
+      bg-color="white"
     />
   </section>
 </template>

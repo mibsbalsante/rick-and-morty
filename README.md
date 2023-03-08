@@ -1,46 +1,75 @@
-# rick-and-morty
+# Rick and Morty Project
 
-This template should help get you started developing with Vue 3 in Vite.
+You can see it live [here](https://rick-and-morty-gules-tau.vercel.app/)
 
-## Recommended IDE Setup
+## Prerequisites
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Before you can install and run this project, you need to have the following software installed on your computer:
 
-## Type Support for `.vue` Imports in TS
+- Node.js (version 16 or above)
+- Yarn (version 3.4.1 is inside the project)
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Installation
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+1. Open a terminal window and navigate to the root directory of the project.
+2. Run the following command to install the project dependencies:
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
+```
 yarn
 ```
 
-### Compile and Hot-Reload for Development
+## Running the Project
 
-```sh
+1. Once the installation is complete, you can start the development server by running the following command:
+
+```
 yarn dev
 ```
 
-### Type-Check, Compile and Minify for Production
+This will start a development server on your local machine and open your web browser to the [default URL](http://127.0.0.1:9000/). You can make changes to the code and the browser will automatically refresh to reflect the changes.
 
-```sh
+2. If you want to build the project for production, run the following command:
+
+```
 yarn build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+This will create a production-ready build of your application in the `dist` directory.
 
-```sh
+## Linting
+
+To run the linter, which checks for coding errors and style issues, run the following command:
+
+```
 yarn lint
 ```
+
+## Testing
+
+To run the test suite, run the following command:
+
+```
+yarn test
+```
+
+This will run the tests using Jest under Vitest and React Testing Library.
+
+## Committing Changes
+
+To commit changes to the project using the [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/) standard, run the following command:
+
+```
+yarn cz
+```
+
+## Previewing Production Build
+
+To preview the production build locally, run the following command:
+
+```
+yarn preview
+```
+
+## License
+
+This project is licensed under the [GNU License](./LICENSE).
