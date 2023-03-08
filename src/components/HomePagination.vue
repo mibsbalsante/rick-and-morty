@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { fasAngleLeft, fasAngleRight } from '@quasar/extras/fontawesome-v6'
 import { useCharactersStore } from '@str/characters'
 
 const { pageNumber, charactersCount, hasLastPage, hasNextPage } =
@@ -7,20 +8,23 @@ const { pageNumber, charactersCount, hasLastPage, hasNextPage } =
 
 <template>
   <section class="pagination">
-    <p>Results: {{ charactersCount || 'Unknown' }}</p>
-    <nav>
-      Page {{ pageNumber }}
-
+    <q-chip color="secondary" text-color="white">
+      {{ charactersCount || 'Unknown' }} Results
+    </q-chip>
+    <nav class="pagination__nav">
       <q-btn
         :disabled="!hasLastPage"
         color="primary"
-        label="Last Page"
+        :icon="fasAngleLeft"
+        title="Last Page"
         @click="() => (pageNumber = pageNumber - 1)"
       />
+      <q-btn disabled color="primary" :label="pageNumber" />
       <q-btn
         :disabled="!hasNextPage"
         color="primary"
-        label="Next Page"
+        :icon="fasAngleRight"
+        title="Next Page"
         @click="() => (pageNumber = pageNumber + 1)"
       />
     </nav>
@@ -30,5 +34,19 @@ const { pageNumber, charactersCount, hasLastPage, hasNextPage } =
 <style scoped lang="scss">
 .pagination {
   @include flex-container;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  &__nav {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column-reverse;
+  }
 }
 </style>

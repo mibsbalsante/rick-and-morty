@@ -1,21 +1,20 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router'
 import { useCharactersStore } from '@str/characters'
+import HomeLink from '@cmp/HomeLink.vue'
 
 const { characters } = useCharactersStore()
 </script>
 
 <template>
   <section class="list">
+    <h2 class="list__title">Characters list</h2>
+
     <nav class="list__nav">
-      <RouterLink
+      <HomeLink
         v-for="character in characters"
-        :to="`/character/${character.id}`"
+        v-bind="character"
         :key="character.id"
-      >
-        <p>{{ character.name }}</p>
-        <q-img :src="character.image" :ratio="1" loading="lazy" width="224px" />
-      </RouterLink>
+      />
     </nav>
   </section>
 </template>
@@ -24,8 +23,19 @@ const { characters } = useCharactersStore()
 .list {
   @include flex-container;
 
+  flex-direction: column;
+  gap: 24px;
+
+  &__title {
+    width: 100%;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
   &__nav {
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 32px 24px;
   }

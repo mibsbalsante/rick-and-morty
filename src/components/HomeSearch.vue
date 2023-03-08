@@ -7,6 +7,7 @@ const { filterName } = useCharactersStore()
 <template>
   <section class="search">
     <q-input
+      class="search__input"
       outlined
       v-model="filterName"
       debounce="500"
@@ -18,5 +19,10 @@ const { filterName } = useCharactersStore()
 <style scoped lang="scss">
 .search {
   @include flex-container;
+
+  &__input {
+    width: 100%;
+    max-width: 320px;
+  }
 }
 </style>
