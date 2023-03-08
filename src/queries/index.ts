@@ -36,6 +36,7 @@ export const CHARACTER_QUERY = gql`
         characters {
           id
           name
+          image
         }
       }
     }

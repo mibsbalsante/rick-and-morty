@@ -23,6 +23,7 @@ const { filterName } = useCharactersStore()
   &__input {
     width: 100%;
     max-width: 320px;
+    color: var(--color-text);
   }
 }
 </style>
