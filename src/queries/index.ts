@@ -19,6 +19,7 @@ export const CHARACTER_QUERY = gql`
   query Character($id: ID!) {
     character(id: $id) {
       name
+      image
       species
       status
       origin {
@@ -35,7 +36,6 @@ export const CHARACTER_QUERY = gql`
         characters {
           id
           name
-          image
         }
       }
     }
